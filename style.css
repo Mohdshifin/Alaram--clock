@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    min-height: 100vh;
+    background-color: #4a98f7;
+
+}
+
+.wrapper{
+    width: 440px;
+    background: white;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px 30px 38px;
+}
+
+#clock-image{
+    height: 110px;
+    width: 130px;
+    max-width: 103px;
+}
+
+.wrapper h1{
+    font-size: 42px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.wrapper .content{
+    width: 100%;
+    justify-content: space-between ;
+}
+
+.wrapper .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.wrapper button{
+    background-color: #3c77bf;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    padding: 17px 0;
+}
+
+.content .column{
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #999;
+    width: calc(100% / 3 - 5px);
+}
+
+.column select{
+    outline: none;
+    border: none;
+    height: 48px;
+    width: 100%;
+    font-size: 20px;
+}
